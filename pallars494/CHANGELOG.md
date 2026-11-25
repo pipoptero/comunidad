@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## 2.3 desarrollo — conciliación económica
+
+- Campos opcionales de referencia para bases y tipos de IVA de obra y honorarios, ayudas colectivas e individuales concedidas y cobradas, facturas pagadas y pendientes, capital dispuesto, vivo y amortizado, intereses y comisiones. No se cargan cifras documentales reales. Los campos vacíos indican ausencia de datos.
+- Los datos de conciliación son informativos y no modifican los saldos de las viviendas. Las ayudas se imputan únicamente en los campos de reparto existentes. Los préstamos son financiación y nunca reducen el coste; los anticipos ya imputados no se vuelven a restar. No es una contabilidad de movimientos ni un libro de facturas.
+- Ajustes positivos y negativos al coste común para estudiar resultados de negociación; impide reducciones que hagan negativo el coste común. El usuario debe evitar incluir dos veces partidas ya reflejadas en el coste común.
+- Se muestran coste bruto repartido, coste neto tras ayudas imputadas y antes de anticipos, subvenciones pendientes de cobro cuando hay ambos datos, y avisos de posibles incoherencias. El coste simulado corresponde a los importes configurados, no se concilia automáticamente con contratos o facturas.
+- Estado adicional de datos finales introducidos, sin afirmar aprobación. JSON versión 4 compatible con escenarios v1, v2 y v3 válidos; la versión anterior no puede abrir v4. Copia local aislada `p494-derrames-v2.3-dev`.
+- Pendiente: fuentes, desglose completo de conceptos e impuestos, trazabilidad individual de ayudas, movimientos financieros, conexión entre escenarios y comparación automatizada. Validar criterios contables y financieros antes de usarlos como liquidación.
+
+
 ## 2.2 desarrollo — 25/11/2026
 
 - Una vivienda puede tener como máximo una compresora trasladada; su coste es particular. Splits de 0 a 4, aerotermia y traslado pueden combinarse.
