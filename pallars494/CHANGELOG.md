@@ -1,5 +1,14 @@
 # Registro de cambios
 
+## 3.1 desarrollo — asistente simplificado y manual
+
+- El asistente presenta cuatro estados: no tengo el dato, definitivo, estimado y no aplica. Los estados internos previos se conservan y los parciales y provisionales se muestran como estimados. Un importe parcial anterior no se aplica al cálculo salvo que se elija expresamente usarlo como estimación.
+- Las preguntas obligatorias no ofrecen no aplica. Las preguntas muestran explicación breve, fuente sugerida y acceso al capítulo pertinente; procedencia y vigencia quedan disponibles en un desplegable.
+- Manual independiente con 16 capítulos, índice, búsqueda, enlaces relacionados e impresión por el navegador. La ayuda contextual vuelve a la misma pregunta conservando los valores no enviados durante la consulta.
+- Se mantiene el motor, los escenarios, los estados internos, los metadatos y el esquema JSON v8. La versión usa almacenamiento independiente y migra la copia anterior válida sin sobrescribirla. No se incorporan datos reales.
+- Pruebas automatizadas de compatibilidad, estados, datos parciales, enlaces, regreso sin pérdida y cálculos existentes. Se comprobó navegación contextual en navegador local; queda pendiente la revisión completa en dispositivos móviles y de la salida PDF.
+
+
 ## 3.0 desarrollo — asistente guiado
 
 - Inicio con asistente, continuación, pendientes, modo avanzado, resultados e importación. Se conserva el motor y las funciones de versiones anteriores.
