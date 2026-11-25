@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## 2.2 desarrollo — 25/11/2026
+
+- Una vivienda puede tener como máximo una compresora trasladada; su coste es particular. Splits de 0 a 4, aerotermia y traslado pueden combinarse.
+- Precios particulares opcionales de aerotermia, paquete de splits y traslado. Vacío usa la tarifa general y cero es válido; el precio particular del paquete se mantiene si se cambia el número de splits, por lo que debe revisarse.
+- Inventarios pendientes, provisionales, confirmados y confirmados sin actuaciones. El inventario pasa a provisional al cambiar las actuaciones.
+- Cuadro de mando con alertas de inventarios incompletos, diferencias de reparto y conciliación financiera. Ficha y CSV incluyen precios aplicados. Se mantiene el cálculo de cuota teórica y la advertencia sobre el préstamo.
+- Exportación de esquema JSON versión 3. Importa escenarios válidos v1 y v2 con hasta un traslado por vivienda; si hay más, se rechaza sin modificar ni sobrescribir el original para revisión. Los escenarios v3 no se pueden abrir en versiones anteriores. Nuevo almacenamiento local `p494-derrames-v2.2-dev`; el primer arranque copia el estado anterior válido sin borrarlo.
+- No se ha cambiado el criterio de ayudas, financiación o redondeo; siguen siendo hipótesis pendientes de validación. Se mantienen las limitaciones sobre precisión y comprobaciones en dispositivos reales.
+
+
 ## 2.1 desarrollo — fase 1 — 25/11/2026
 
 La versión 2.0 original se conserva intacta. El archivo de desarrollo es `app/Pallars494_derrames_v2_1_desarrollo.html`. No se ha publicado ni requiere conexión.
