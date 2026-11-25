@@ -1,5 +1,15 @@
 # Registro de cambios
 
+## 2.5 desarrollo — elegibilidad y seguimiento de ayudas
+
+- Se conservan las ayudas colectiva e individual imputadas, anticipos, gastos comunes, particulares y financiación anteriores.
+- Elegibilidad de cada vivienda por parte común, aerotermia, splits, traslado particular y otros: subvencionable, no subvencionable o pendiente. Los traslados comunes se incluyen en la parte común. Los porcentajes 80 % y 100 % son referencias matemáticas, no resolución ni cálculo de derecho.
+- Estado de ayuda individual desconocida, solicitada, concedida, denegada o cobrada; importes concedido y cobrado opcionales y diferencia cuando ambos son conocidos. Estos campos son informativos: para descontar la ayuda se registra explícitamente una vez en el importe individual imputado existente. Se advierte cuando la imputación y concesión difieren.
+- Controles de ayuda imputada superior a elegibilidad conocida, importes cobrados superiores a concedidos, estados incoherentes y posibles diferencias entre totales globales y sumas de viviendas. Las sumas individuales son parciales si faltan fichas. No pueden detectar por sí mismos todas las duplicidades ni validar resoluciones.
+- Las tablas colectivas en pantalla, impresión y CSV ocultan los campos de ayudas y saldos individuales; la ficha individual y los escenarios JSON sí contienen datos sensibles y requieren tratamiento privado. El código de acceso de la web pública no es seguridad.
+- JSON v6 migra escenarios v1 a v5 válidos sin inferir concesión o elegibilidad; nuevos escenarios no se abren en versiones previas. Clave de almacenamiento independiente. No se incluyen datos reales o situaciones personales.
+
+
 ## 2.4 desarrollo — reparto individual y conciliación
 
 - Revisión previa: existían gastos comunes y particulares, paquetes de splits con excepciones, ayudas individuales y colectivas, anticipos, préstamo informativo y exportación general. Se mantienen sus funciones.
