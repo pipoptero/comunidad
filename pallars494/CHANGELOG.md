@@ -1,5 +1,17 @@
 # Registro de cambios
 
+## 3.0 desarrollo — asistente guiado
+
+- Inicio con asistente, continuación, pendientes, modo avanzado, resultados e importación. Se conserva el motor y las funciones de versiones anteriores.
+- Recorrido de 15 preguntas en ocho etapas más resultados, con ayuda contextual, referencia privada, procedencia, fecha, vigencia, observaciones y clasificación de la información. Los datos incompletos se conservan como referencia sin sustituir el total económico. Un dato desconocido no se convierte en cero en el resultado guiado.
+- Los importes vinculados alimentan el mismo modelo del modo avanzado; las concesiones y cobros de referencia no se imputan por sí solos a las viviendas. El inventario se edita con una tabla de 32 viviendas y acciones para varias seleccionadas; los cambios quedan provisionales.
+- Solo se omiten respuestas no aplicables o validadas con fecha de vigencia no caducada. Sin fecha de vigencia se vuelven a preguntar. Cambiar un dato vinculado en el modo avanzado invalida su validación previa.
+- Los datos desconocidos e incompletos aparecen automáticamente en la documentación pendiente y en su CSV con documento, interlocutor, fecha, observaciones y consecuencia. Respuestas y progreso se guardan en el escenario y el JSON v8; las versiones anteriores no leen v8. Se migran escenarios previos sin inventar validaciones.
+- Referencias de entidades configurables en modo avanzado. La dirección de obra queda vacía por defecto en la copia pública para no incorporar información personal; puede completarse en el escenario privado. La distribución física sigue fijada a las 32 viviendas, con coeficientes editables.
+- Los resultados con datos desconocidos o incompletos no se muestran como liquidación calculable. El modo avanzado conserva sus importes ficticios y sus advertencias. Las validaciones del usuario no sustituyen una aprobación formal.
+- Pruebas automatizadas de cálculo compartido, migración, preguntas condicionales, referencias parciales, vigencia, persistencia y configuración múltiple. Comprobación interactiva local de navegación inicial y recuperación; faltan pruebas completas en móviles y navegadores.
+
+
 ## 2.6 desarrollo — sobrecostes, ampliaciones y validación
 
 - Los costes subvencionables reconocido inicialmente y definitivo son referencias opcionales. Los sobrecostes comunes subvencionables y no subvencionables se añaden al coste común y se reparten por coeficiente sin exención automática. No duplicarlos en el coste común ni en los ajustes de negociación; es una hipótesis pendiente de validación.
