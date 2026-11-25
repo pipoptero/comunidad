@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## 2.6 desarrollo — sobrecostes, ampliaciones y validación
+
+- Los costes subvencionables reconocido inicialmente y definitivo son referencias opcionales. Los sobrecostes comunes subvencionables y no subvencionables se añaden al coste común y se reparten por coeficiente sin exención automática. No duplicarlos en el coste común ni en los ajustes de negociación; es una hipótesis pendiente de validación.
+- Las ampliaciones de ayudas colectiva e individual son importes simulados separados de los datos de concesión, y afectan al saldo únicamente como hipótesis imputadas. No actualizan lo concedido o cobrado ni son nuevas resoluciones.
+- Aerotermia, splits, traslado y otros trabajos pueden clasificarse como comunes, particulares o pendientes, con elegibilidad independiente. Los conceptos comunes se añaden una vez al reparto y conservan su clasificación de elegibilidad por concepto.
+- Nuevo registro desplegable con 12 requisitos en seis grupos, interlocutor, estado, fecha, observaciones y referencia opcional. Se guarda en el JSON y se puede exportar el listado pendiente. Las cifras y las anotaciones reales no se publican en el repositorio.
+- Los resultados quedan identificados como provisionales mientras existan requisitos no resueltos, viviendas sin confirmar, coste total, sobrecostes o elegibilidad pendientes. Las diferencias de céntimos no se regularizan automáticamente.
+- JSON v7 migra escenarios anteriores válidos sin inventar ayudas concedidas y conserva el reparto anterior; versiones previas no importan v7. Clave local independiente.
+- El registro sirve para organizar información necesaria para la calculadora; no gestiona ni almacena documentos. Su validación es una indicación del usuario y no sustituye la revisión económica, jurídica o de la entidad concedente.
+
+
 ## 2.5 desarrollo — elegibilidad y seguimiento de ayudas
 
 - Se conservan las ayudas colectiva e individual imputadas, anticipos, gastos comunes, particulares y financiación anteriores.
