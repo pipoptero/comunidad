@@ -1,5 +1,16 @@
 # Registro de cambios
 
+## 2.4 desarrollo — reparto individual y conciliación
+
+- Revisión previa: existían gastos comunes y particulares, paquetes de splits con excepciones, ayudas individuales y colectivas, anticipos, préstamo informativo y exportación general. Se mantienen sus funciones.
+- El traslado por vivienda admite clasificación común, particular o pendiente. Los comunes se agregan una vez al coste común y se reparten por coeficiente; los particulares se imputan a la vivienda; los pendientes se advierten y excluyen hasta determinar criterio. No incluir estos traslados una segunda vez en el coste común manual. Al migrar escenarios anteriores se conserva su imputación particular.
+- Precio unitario opcional por split con prioridad sobre paquetes; la excepción de vivienda continúa siendo el coste total de su paquete. Valores vacíos no son cero.
+- Coste total objetivo opcional y diferencia con el coste repartido, con aviso si no coincide. La igualdad no demuestra que las facturas no contengan partidas duplicadas: requiere cotejo documental.
+- Liquidación muestra bruto, ayudas por clase, neto antes de anticipos, anticipos, pendiente y excedente. Exportación CSV de conciliación global y ficha individual, además del CSV de 32 viviendas.
+- Se mantienen provisionales las reglas de reparto; los importes iniciales siguen siendo ficticios. No se incorpora ningún dato económico real al repositorio.
+- JSON versión 5: migra versiones anteriores válidas sin sobrescribirlas; los nuevos escenarios no son compatibles hacia atrás. Nueva clave local aislada.
+
+
 ## 2.3 desarrollo — conciliación económica
 
 - Campos opcionales de referencia para bases y tipos de IVA de obra y honorarios, ayudas colectivas e individuales concedidas y cobradas, facturas pagadas y pendientes, capital dispuesto, vivo y amortizado, intereses y comisiones. No se cargan cifras documentales reales. Los campos vacíos indican ausencia de datos.
